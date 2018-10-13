@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c0074bc-24cf-4da7-9969-1ee8280296fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TopK/TopK.py" beforeDir="false" afterPath="$PROJECT_DIR$/TopK/TopK.py" afterDir="false" />
-    </list>
+    <list default="true" id="7c0074bc-24cf-4da7-9969-1ee8280296fa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +36,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -69,9 +67,6 @@
               <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
               <folding>
                 <marker date="1539422974898" expanded="true" signature="53:56" ph="..." />
-                <marker date="1539422974898" expanded="true" signature="569:1761" ph="..." />
-                <marker date="1539422974898" expanded="true" signature="981:1681" ph="..." />
-                <marker date="1539422974898" expanded="true" signature="1320:1681" ph="..." />
               </folding>
             </state>
           </provider>
@@ -214,12 +209,12 @@
     <frame x="0" y="23" width="1440" height="819" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3562586" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3562586" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -255,9 +250,6 @@
           <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
           <folding>
             <marker date="1539422974898" expanded="true" signature="53:56" ph="..." />
-            <marker date="1539422974898" expanded="true" signature="569:1761" ph="..." />
-            <marker date="1539422974898" expanded="true" signature="981:1681" ph="..." />
-            <marker date="1539422974898" expanded="true" signature="1320:1681" ph="..." />
           </folding>
         </state>
       </provider>
