@@ -53,6 +53,19 @@ def SelectionTopK(K, values):
     return results
 
 
+def InsertTopK(K, values):
+    length = len(values)
+    for i in range(1, length):
+        temp = values[i]
+        leftIndex = i-1
+        # print(leftIndex)
+        while leftIndex >= 0 and temp > values[leftIndex]:
+            # print(leftIndex)
+            values[leftIndex+1] = values[leftIndex]
+            leftIndex -= 1
+        values[leftIndex+1] = temp
+    return values[0:K]
+
 def topKTest(K, values):
     values.sort(reverse=True)
     return values[0:K]
@@ -79,3 +92,10 @@ if __name__ == "__main__":
     print(selectionResult)
     if selectionResult == testResult:
         print("选择排序测试通过")
+    # K = 0
+    # values = [4, 2, 1, 12, 8]
+    InsertResult = InsertTopK(K, values)
+    print("插入排序结果为：")
+    print(InsertResult)
+    if InsertResult == testResult:
+        print("插入排序测试通过")
