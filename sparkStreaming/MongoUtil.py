@@ -2,7 +2,7 @@ from pyspark import SparkContext, SparkConf
 from pyspark.sql.types import *
 from pyspark.sql import SQLContext
 from pyspark.sql import SparkSession
-from pyspark.sql import SparkSession
+
 import os, threading, time
 os.environ['PYSPARK_PYTHON'] = '/Users/chenhao/anaconda3/bin/python'
 
@@ -28,6 +28,7 @@ def MongoSpark(master, inputuri, outputuri, filepath):
         .getOrCreate()
     # print()
     data = sparkMongo.read.format("com.mongodb.spark.sql.DefaultSource").load()
+
     # data[]
     # writeData = sparkMongo.createDataFrame([('zhangwei', 24), ('zhangjiajie', 23)], ['name', 'age'])
     # writeData.write.format("com.mongodb.spark.sql.DefaultSource").mode("append").save()
@@ -40,9 +41,12 @@ def MongoSpark(master, inputuri, outputuri, filepath):
         text = head['text'].strip()
         index = text.find("省")
         #index 方法如果不存在会抛异常
-        if index > -1:
-            provinces.append(text[index-2:index+1])
+        province = text[index - 2:index + 1]
+        if index > 1:
+            provinces.append(province)
             # print()
+        else:
+            print("省份:"+province)
     # filepath = "/Users/chenhao/Documents/CloudCompute/data/streaming"
     # print(provinces)
     t = SimuStreamThread(provinces, filepath)
